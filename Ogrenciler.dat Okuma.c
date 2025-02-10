@@ -6,9 +6,9 @@ struct Student {
 	int average;
 };
 int main() {
-	FILE* file = fopen("C:\\Users\\Ceren\\Downloads\\Ogrenciler.dat", "rb");
+	FILE* file = fopen("C:\\Users\\Ceren\\Downloads\\Ogrenciler.dat", "rb");//dat'i actim
 	struct Student student;
-	while (fread(&student, sizeof(struct Student), 1, file) == 1) {
+	while (fread(&student, sizeof(struct Student), 1, file) == 1) {//bilgileri oku
 		printf(" -------------------------------------------\n");
 		printf(" ID       : %d\n", student.id);
 		printf(" Name     : %s\n", student.name);
